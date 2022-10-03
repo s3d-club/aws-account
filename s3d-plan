@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-_s3d-semver-update
+terraform plan

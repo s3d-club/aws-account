@@ -1,9 +1,10 @@
 # Changes
-- This is a [CHANGES.md](https://go.s3d.club/changes/) file
+Recently completed and planned work is tracked here.
 
-## [0.0.1](https://go.s3d.club/s3d-aws-account/work/0.0.1)
-- Released `0.0.1`
+## [0.0.0](.) [0.1.0](.)
+- Created early releases
 
-## [Next](https://go.s3d.club/s3d-aws-account/next)
-- **TODO** Added CI/CD
-- **TODO** Improved `README.md`
+## [0.1.1](.)
+- Updated documents
+- Upgraded `hashicorp/aws` provider
+- Upgraded all modules
