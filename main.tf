@@ -8,24 +8,26 @@ locals {
 
 module "go_site" {
   count  = 1
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.4"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.7"
 
-  cloudfront = "go"
-  domain     = local.group.domain
-  favicon    = null
-  s3_prefix  = local.group.name_prefix
-  tags       = local.group.tags
+  domain      = local.group.domain
+  favicon     = null
+  kms_key_arn = null
+  name        = "go"
+  s3_prefix   = local.group.name_prefix
+  tags        = local.group.tags
 }
 
 module "mark_site" {
   count  = 0
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.4"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.7"
 
-  cloudfront = "mark"
-  domain     = local.group.domain
-  favicon    = null
-  tags       = local.group.tags
-  s3_prefix  = local.group.name_prefix
+  domain      = local.group.domain
+  favicon     = null
+  kms_key_arn = null
+  name        = "mark"
+  s3_prefix   = local.group.name_prefix
+  tags        = local.group.tags
 }
 
 module "name" {
@@ -38,18 +40,19 @@ module "name" {
 
 module "site" {
   count  = 1
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.4"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.7"
 
-  domain    = local.group.domain
-  favicon   = null
-  tags      = local.group.tags
-  s3_prefix = local.group.name_prefix
+  domain      = local.group.domain
+  favicon     = null
+  kms_key_arn = null
+  tags        = local.group.tags
+  s3_prefix   = local.group.name_prefix
 }
 
 # tfsec:ignore:aws-ec2-no-public-egress-sgr
 # tfsec:ignore:aws-ec2-no-public-ingress-sgr
 module "site_group" {
-  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.3"
+  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.7"
 
   az_blacklist = ["us-east-1e"]
   cidr6s       = ["::/0"]
@@ -58,6 +61,7 @@ module "site_group" {
   ec2_key_name = var.ec2_key_name
   ecrs         = ["python"]
   enable_ec2   = true
+  kms_key_id   = null
   tags         = module.name.tags
   vpc_id       = data.aws_vpc.this.id
 }
