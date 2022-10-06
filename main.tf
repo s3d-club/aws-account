@@ -52,21 +52,17 @@ module "site" {
 # tfsec:ignore:aws-ec2-no-public-egress-sgr
 # tfsec:ignore:aws-ec2-no-public-ingress-sgr
 module "site_group" {
-  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.7"
+  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.10"
 
-  az_blacklist = ["us-east-1e"]
-  cidr6s       = ["::/0"]
-  cidrs        = ["0.0.0.0/0"]
-  domain       = "s3d.club"
-  ec2_key_name = var.ec2_key_name
-  ecrs         = ["python"]
-  enable_ec2   = true
-  kms_key_id   = null
-  tags         = module.name.tags
-  vpc_id       = data.aws_vpc.this.id
-}
-
-
-provider "kubernetes" {
-  config_path = "~/.kube/config"
+  cidr6s        = ["::/0"]
+  cidrs         = ["0.0.0.0/0"]
+  domain        = "s3d.club"
+  ec2_key_name  = var.ec2_key_name
+  ecrs          = ["python"]
+  egress_cidr6s = ["::/0"]
+  egress_cidrs  = ["0.0.0.0/0"]
+  enable_ec2    = false
+  kms_key_id    = null
+  tags          = module.name.tags
+  vpc_id        = data.aws_vpc.this.id
 }
