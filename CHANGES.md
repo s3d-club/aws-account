@@ -8,3 +8,6 @@ Recently completed and planned work is tracked here.
 - Added `egress_cidr` variables
 - Removed `kubernetes` provider
 - Updated `site_group` module
+
+## [0.1.5](.)
+- Updated `CODE-OF-CONDUCT.md`
