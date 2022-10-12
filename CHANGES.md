@@ -1,13 +1,10 @@
 # Changes
 Recently completed and planned work is tracked here.
 
-## [0.0.0](.) [0.1.3](.)
+## [0.0.0](.) [0.1.7](.)
 - Created early releases
 
-## [0.1.4](.)
-- Added `egress_cidr` variables
-- Removed `kubernetes` provider
-- Updated `site_group` module
-
-## [0.1.5](.)
-- Updated `CODE-OF-CONDUCT.md`
+## [0.1.6](.)
+- Fixed README typo
+- Updated providers
+- Updated modules
