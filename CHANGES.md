@@ -8,3 +8,6 @@ Recently completed and planned work is tracked here.
 - Fixed README typo
 - Updated providers
 - Updated modules
+
+## [0.1.7](.)
+- Updated `site_group` module
