@@ -7,3 +7,8 @@ Recently completed and planned work is tracked here.
 ## [0.1.9](.)
 - Updated `hashicorp/aws` provider
 - Updated `site_group` module
+
+## [0.1.10](.)
+- Updated `.terraform.lock.hcl`
+- Updated `terraform.tf` _(fixed whitespace)_
+- Removed `s3d-flow`
