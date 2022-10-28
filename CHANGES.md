@@ -6,3 +6,10 @@ Recently completed and planned work is tracked here.
 
 ## [0.1.12](.)
 - Updated `site` module
+
+## [0.1.13](.)
+- Updated `aws` provider
+- Updated `go_site` module
+- Updated `mark_site` module
+- Updated `site_group` module
+- Updated `site` module

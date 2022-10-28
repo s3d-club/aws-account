@@ -8,7 +8,7 @@ locals {
 
 module "go_site" {
   count  = 1
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.11"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.12"
 
   domain      = local.group.domain
   favicon     = null
@@ -20,7 +20,7 @@ module "go_site" {
 
 module "mark_site" {
   count  = 0
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.11"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.12"
 
   domain      = local.group.domain
   favicon     = null
@@ -40,7 +40,7 @@ module "name" {
 
 module "site" {
   count  = 1
-  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.11"
+  source = "github.com/s3d-club/terraform-aws-site?ref=v0.1.12"
 
   domain      = local.group.domain
   favicon     = null
@@ -52,7 +52,7 @@ module "site" {
 # tfsec:ignore:aws-ec2-no-public-egress-sgr
 # tfsec:ignore:aws-ec2-no-public-ingress-sgr
 module "site_group" {
-  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.28"
+  source = "github.com/s3d-club/terraform-aws-site-group?ref=v0.1.31"
 
   cidr6s        = ["::/0"]
   cidrs         = ["0.0.0.0/0"]
