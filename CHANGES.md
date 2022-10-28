@@ -10,3 +10,8 @@ Recently completed and planned work is tracked here.
 - Updated `name` module
 - Updated `site_group` module
 - Updated `site` module
+
+## [0.1.15](.)
+- Updated `go_site`
+- Updated `mark_site`
+- Updated `site`
