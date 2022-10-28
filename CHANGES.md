@@ -1,15 +1,12 @@
 # Changes
 Recently completed and planned work is tracked here.
 
-## [0.0.0](.) [0.1.11](.)
+## [0.0.0](.) [0.1.13](.)
 - Created early releases
 
-## [0.1.12](.)
-- Updated `site` module
-
-## [0.1.13](.)
+## [0.1.14](.)
+- Improved descriptions of variables and outputs
 - Updated `aws` provider
-- Updated `go_site` module
-- Updated `mark_site` module
+- Updated `name` module
 - Updated `site_group` module
 - Updated `site` module
