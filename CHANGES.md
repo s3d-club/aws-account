@@ -1,24 +1,20 @@
 # Changes
-Recently completed and planned work is tracked here.
+This file describes the project history as it relates to tagged versions.
 
 ## [0.0.0](.) [0.1.13](.)
 - Created early releases
 
-## [0.1.14](.)
+## [0.1.14](.) to [0.1.17](.)
 - Improved descriptions of variables and outputs
-- Updated `aws` provider
-- Updated `name` module
-- Updated `site_group` module
-- Updated `site` module
-
-## [0.1.15](.)
-- Updated `go_site`
-- Updated `mark_site`
-- Updated `site`
-
-## [0.1.16](.)
 - Removed `ec2_key_name` variable and `terraform.tfvars` file
-- Updated `site_group` module
+- Upgraded `aws` provider
+- Upgraded `go_site` module
+- Upgraded `mark_site` module
+- Upgraded `name` module
+- Upgraded `site_group` module
+- Upgraded `site` module
 
-## [0.1.17](.)
-- Changed to use `-x` as suffix for pre-release versions
+## [0.1.18](.)
+- Upgraded `site_group` module
+- Upgraded `terraform` version
+- Upgraded `time` provider
