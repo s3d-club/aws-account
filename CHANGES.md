@@ -18,3 +18,6 @@ This file describes the project history as it relates to tagged versions.
 
 ## [0.1.20](.)
 - Updated modules and providers
+
+## [0.1.21](.)
+- Updated `site_group` module
