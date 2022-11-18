@@ -11,3 +11,6 @@ This file describes the project history as it relates to tagged versions.
 
 ## [0.1.25](.) to [0.1.26](.)
 - Updated `aws` provider
+
+## [0.1.27](.)
+- Updated `site_group` module
