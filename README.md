@@ -2,9 +2,8 @@
 This is the project that defines the `www.s3d.club` site.
 
 ## Associated Documents
-Please read our [LICENSE][lice], [CONTRIBUTING][cont], [CODE-OF-CONDUCT][code],
-and [CHANGES][chge] documents before working in this project and anytime they
-are updated.
+Please read our [LICENSE][lice], [CONTRIBUTING][cont], and [CHANGES][chge]
+documents before working in this project and anytime they are updated.
 
 ## Overview
 This is the Terraform code for the S3D AWS Account. The code exists here open
@@ -24,6 +23,5 @@ project for reference when discussing techniques, issues, and problems in the
 Terraform and AWS communities.
 
 [chge]: ./CHANGES.md
-[code]: ./CODE-OF-CONDUCT.md
 [cont]: ./CONTRIBUTING.md
 [lice]: ./LICENSE.md
