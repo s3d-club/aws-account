@@ -12,3 +12,6 @@ This file describes the project history as it relates to tagged versions.
 
 ## [0.1.32](.) to [0.1.34](.)
 - Updated `aws` provider
+
+## [0.1.35](.)
+- Updated `terraform-aws-site` modules
