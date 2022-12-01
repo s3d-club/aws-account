@@ -10,8 +10,7 @@ This file describes the project history as it relates to tagged versions.
 - Updated docs
 - Updated providers and modules
 
-## [0.1.32](.) to [0.1.34](.)
+## [0.1.32](.) to [0.1.36](.)
 - Updated `aws` provider
-
-## [0.1.35](.)
+- Updated `required_version`
 - Updated `terraform-aws-site` modules
