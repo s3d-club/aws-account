@@ -14,5 +14,5 @@ This file describes the project history as it relates to tagged versions.
 - Updated `required_version`
 - Updated modules
 
-## [0.1.40](.)
+## [0.1.40](.) to [0.1.41](.)
 - Updated `aws` provider and modules
