@@ -29,7 +29,7 @@ module "mark_site" {
 }
 
 module "name" {
-  source = "github.com/s3d-club/terraform-external-name?ref=v1.0.1"
+  source = "github.com/s3d-club/terraform-external-name?ref=v1.0.0"
 
   context = "s3d-account"
   path    = path.module
